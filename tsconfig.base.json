@@ -5,11 +5,10 @@
     "moduleResolution": "Node",
     "baseUrl": ".",
     "paths": {
-      "@myorg/c": ["packages/c/src"],
-      "@myorg/b": ["packages/b/src"],
-      "@myorg/a": ["packages/a/src"]
+      "@myorg/*": ["packages/*/src"]
     },
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+    "skipLibCheck": true
   }
 }
 
