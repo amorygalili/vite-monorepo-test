@@ -1,0 +1,12 @@
+{
+  "name": "@myorg/a",
+  "version": "0.0.1",
+  "dependencies": {
+    "@myorg/b": "workspace:*"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  }
+}
+

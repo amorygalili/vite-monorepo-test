@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@myorg/c": ["packages/c/src"],
+      "@myorg/b": ["packages/b/src"],
+      "@myorg/a": ["packages/a/src"]
+    },
+    "preserveSymlinks": true
+  }
+}
+
