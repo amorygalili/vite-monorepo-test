@@ -2,6 +2,9 @@
 
 import { defineConfig } from 'vite';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   // root default – Vite serves from the root folder
@@ -17,7 +20,8 @@ export default defineConfig({
   server: {
     fs: {
       allow: [
-        // allow serving files from workspace packages
+        // allow serving files from workspace packages and root
+        path.resolve(__dirname, '.'),
         path.resolve(__dirname, 'packages')
       ]
     }
